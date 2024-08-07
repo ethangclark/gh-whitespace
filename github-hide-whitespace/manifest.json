@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Hide Whitespace",
+  "version": "1.0",
+  "description": "Automatically enable 'Hide whitespace changes' on GitHub pull requests.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
